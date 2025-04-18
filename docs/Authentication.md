@@ -48,7 +48,7 @@ The `AD` token is different from `LD` and `RD`, in that you must calculate it
 instead of obtaining it from the router. You need the following values beforehand:
 
 - `WA_INNER_VERSION` (a.k.a. the router's firmware version)
-- `CR_VERSION` -
+- `CR_VERSION`<sup>[[1]](#note-1)</sup>
 - [`RD`](#ld--rd-tokens)
 
 The token is calculated as follows:
@@ -56,3 +56,6 @@ The token is calculated as follows:
 ```javascript
 var AD = SHA256(SHA256(WA_INNER_VERSION + CR_VERSION) + AD);
 ```
+
+<sup><a name="note-1">[1]</a></sup> I'm not certain of what `CR_VERSION` is supposed to represent; my router returns an empty string when 
+requested via `/goform/goform_get_cmd_process`.
