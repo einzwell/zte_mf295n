@@ -18,6 +18,7 @@ In my case, my variant does _not_ have any of those features.
 
 - [x] Authentication mechanism (see [Authentication](docs/Authentication.md))
 - [x] Hidden web pages (see [Links](docs/Links.md))
+- [x] TR-069 Configuration (see [TR-069](docs/TR-069.md))
 - [ ] Shell access
 
 This list is not exhaustive and will be updated as I learn more about the device.
